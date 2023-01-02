@@ -122,6 +122,77 @@ nav a {
   display: block;
 }
 
+.program {
+  padding: 2rem 1rem;
+  background-image: url(images/program-mobile.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
+.program h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+}
+
+.pros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.288)
+}
+
+.pros .img {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.pros .img i {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.pros .img h4 {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: rgb(230 27 27 / 94%);
+}
+
+.pros p {
+  width: 65%;
+  font-size: 13px;
+}
+
+.program .btn {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.program button {
+  background-color:rgb(230 27 27 / 94%);
+  padding: 0.5rem 1rem;
+  width: 75%;
+  border: none; 
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  font-family: poppins;
+}
+
+.btn a{
+  display: none;
+}
+
+
+/****************program section*****************************/
+
 @media (min-width:768px) {
 
   header {
@@ -216,4 +287,102 @@ nav a {
   .intro .bg {
     width: 600px;
   }
+
+  .program {
+    background-image: url(images/program-desktop.jpg);
+    background-size: cover;
+    padding: 4rem 0;
+  }
+  
+  .container {
+    width: 75%;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+  
+  .pros {
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    padding: 15px 5px;
+  }
+  
+  .pros .img {
+    flex-direction: column;
+  }
+  
+  .pros .img i {
+    font-size: 25px;
+    margin: 5px 0;
+  }
+  
+  .pros h4 {
+    margin: 5px 0;  
+  }
+  
+  .pros .img,
+  .pros p {
+    width: 100%;
+  }
+  
+  .btn button {
+    display: none;
+  }
+  
+  .btn a {
+    display: block;
+    text-decoration: underline;
+  }
+  
+  /****************program section*****************************/
+
+  .program {
+    background-image: url(images/program-desktop.jpg);
+    background-size: cover;
+    padding: 4rem 0;
+  }
+  
+  .container {
+    width: 75%;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fill, 200px);
+  }
+  
+  .pros {
+    flex-direction: column;
+    text-align: center;
+    margin: 5px;
+    padding: 15px 5px;
+  }
+  
+  .pros .img {
+    flex-direction: column;
+  }
+  
+  .pros .img i {
+    font-size: 25px;
+    margin: 5px 0;
+  }
+  
+  .pros h4 {
+    margin: 5px 0;  
+  }
+  
+  .pros .img,
+  .pros p {
+    width: 100%;
+  }
+  
+  .btn button {
+    display: none;
+  }
+  
+  .btn a {
+    display: block;
+    text-decoration: underline;
+  }
+
+  /**************featuresspeaker section*********************/
+
+  
 }
