@@ -112,7 +112,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://tobby8629.github.io/Capstone-project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,7 +210,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/tobby8629)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-popoola-b0196922a/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
