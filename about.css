@@ -152,6 +152,106 @@
    width: 100%;
 }
 
+.pasts {
+  background-image: url(images/footer.jfif);
+  background-size: cover;
+  width: 100%;
+}
+
+.pastsummits {
+  padding: 1rem;
+  text-align: center;
+  width:75%;
+  margin: auto;
+  color:white;
+}
+
+.past1,
+.past2 {
+  background-repeat: no-repeat;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  text-transform: capitalize;
+  color: white;
+}
+
+.past1 {
+  background-image: linear-gradient(rgba(202, 30, 30, 0.712),rgba(202, 30, 30, 0.712)), url(images/summit1.jfif);
+  background-size: 100%;
+}
+
+.past2 {
+  background-image: linear-gradient(rgba(202, 30, 30, 0.712),rgba(202, 30, 30, 0.712)), url(images/summit2.jpg);
+  
+}
+
+.past1 h3,
+.past2 h3 {
+  font-size: 25px;
+}
+
+.past1 p,
+.past2 p {
+font-size: 18px;
+color: white;
+text-align: center;
+}
+
+.desktop {
+  display: none;
+}
+
+
+.sponsors h2 {
+text-align: center;
+}
+
+.sponsors .contain {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.imgg { 
+width: 100px;
+margin: 10px;
+}
+
+.sponsors .contain img {
+width: 100%;
+}
+
+footer {
+  display:none;
+  background-image: url(images/footer.jfif);
+}
+
+.con {
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-size: cover;
+  color: white;
+}
+
+footer h3 {
+  border: 2px solid red;
+  text-align: center;
+  padding: 1px 1rem;
+  font-size: 15px;
+  margin-right: 1rem;
+}
+
+footer p {
+  font-size: 14px;
+  margin-left: 1rem;
+}
+
 
 @media (min-width:768px) {
   .container {
@@ -251,4 +351,68 @@
         width: 700px;
         margin: 0 auto;
     }
+
+    section,
+      .ntslogo {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .ntsimage {
+        padding: 0 0.5rem;
+      }
+
+      .ntslogo p {
+        margin: 1.5rem 0;
+      }
+
+      .wrap {
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem 0;
+      }
+
+      .past1,
+      .past2 {
+        width: 48%;
+        padding: 1rem;
+      }
+
+      .desktop {
+        display: block;
+      }
+      
+      .mobile {
+        display: none;
+      }
+
+      .sponsors {
+        display: block;
+      }
+      
+      .sponsors h2 {
+        margin: 2rem 0;
+      }
+
+      footer {
+        padding: 2rem 0;
+      }
+
+      .con {
+        width: 75%;
+        margin: auto;
+    }
+    
+      footer p {
+        margin-left: 0;
+      }
+    
+      .words .desktop {
+        margin: 0.4rem 0;
+      }
+    
+      .desktop, 
+      footer{
+        display: block;
+      }
   }
