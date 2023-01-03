@@ -191,7 +191,70 @@ nav a {
 }
 
 
-/****************program section*****************************/
+/****************featured speaker section*****************************/
+
+section h2{
+  text-align: center;
+  margin: 1rem 0px;
+}
+
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.each {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.each .img {
+  width: 32%;
+}
+
+.each .texts {
+  width: 63%;
+}
+
+.each .texts h3 {
+  text-transform: capitalize;
+}
+
+.each .texts h4 {
+  color: rgb(230 27 27 / 94%);
+  text-transform: capitalize;
+}
+
+.each .texts p,
+.each .texts h4 {
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+.img img {
+  width: 100%;
+}
+
+.more button {
+  width: 100%;
+  background-color: white;
+  border: 1px solid rgb(78, 78, 78);
+  padding: 0.5rem;
+  font-size: 20px;
+  font-family: poppins;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more span {
+  margin-right: 5px;
+}
+
+/****************sponsor section*****************************/
+
+
 
 @media (min-width:768px) {
 
@@ -384,5 +447,35 @@ nav a {
 
   /**************featuresspeaker section*********************/
 
+  .contain {
+    width: 75%;
+    margin: 0 auto;  
+  }
   
+  .contain h2 {
+    margin: 1rem 0;
+  }
+  
+  .wrapper {
+    grid-template-columns: repeat(auto-fill, 34vw);
+    justify-content: center;
+    transition: .3s linear;
+  }
+  
+  .each {
+    align-items: center;
+  }
+  
+  .imgg { 
+    width: 120px;
+    margin: 15px;
+  }
+
+  .more {
+    display: none;
+  }
+
+  /**************sponsor section*********************/
+
+
 }
