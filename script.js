@@ -70,7 +70,7 @@ let test = speakers.slice(0,2)
 const wrapper = document.querySelector('.wrapper');
 const more = document.querySelector('.more');
 const sponsors = document.querySelector('.sponsors')
-
+const footer = document.querySelector('#footer')
 
 function wrap(main,array) {
     const take = `
@@ -105,7 +105,8 @@ window.addEventListener('load', ()=>{
         more.addEventListener('click',()=>{
             wrapper.innerHTML='';
             more.style.display = "none";
-            sponsors.style.display = "block"; 
+            sponsors.style.display = "block";
+            footer.style.display = "block";  
             speakers.map((speaker)=>{
                 wrap(wrapper,speaker);
               } )
@@ -123,6 +124,7 @@ window.addEventListener('resize', ()=>{
           } )
           more.style.display = "none";
         sponsors.style.display = "block"; 
+        footer.style.display = "block";
     } 
 
     else  {
@@ -131,6 +133,7 @@ window.addEventListener('resize', ()=>{
         wrap(wrapper,test);
     })
     sponsors.style.display ="none";
+    footer.style.display ="none";
         more.style.display = "block";
       
     }

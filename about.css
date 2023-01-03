@@ -129,6 +129,29 @@
   .how .fa-xmark {
       display: block;
   }
+  
+  .ntslogo {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgb(206, 202, 202);
+    margin: 1rem 0;
+  }
+
+.ntslogo h2 {
+   text-transform: capitalize;
+}
+
+.ntsimage {
+   width: 100%;
+   padding: 0 1rem;
+   margin: 1rem 0;
+   border: 1px solid rgb(206, 202, 202);
+}
+
+.ntsimage img {
+   width: 100%;
+}
+
 
 @media (min-width:768px) {
   .container {

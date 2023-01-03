@@ -283,6 +283,37 @@ section h2{
   width: 100%;
 }
 
+.desktop {
+  display: none;
+}
+
+footer {
+  display:none;
+  background-image: url(images/footer.jfif);
+}
+
+.con {
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+  background-size: cover;
+  color: white;
+}
+
+footer h3 {
+  border: 2px solid red;
+  text-align: center;
+  padding: 1px 1rem;
+  font-size: 15px;
+  margin-right: 1rem;
+}
+
+footer p {
+  font-size: 14px;
+  margin-left: 1rem;
+}
+
+
 /****************sponsor section*****************************/
 
 
@@ -515,6 +546,28 @@ section h2{
   .sponsors h2 {
     margin: 2rem 0;
   } 
+
+  .con {
+    width: 75%;
+    margin :auto;
+  }
+
+  footer {
+    padding: 2rem 0;
+  }
+
+  footer p {
+    margin-left: 0;
+  }
+
+  .words .desktop {
+    margin: 0.4rem 0;
+  }
+
+  .desktop, 
+  footer{
+    display: block;
+  }
 
 
 }
