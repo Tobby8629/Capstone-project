@@ -1,169 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;   
-   }
-   
-   body {
-    font-family: 'Poppins', sans-serif;
-    
-  }
-  
-  li {
-      list-style: none;
-  }
-  
-  a {
-      text-decoration: none;
-      text-transform: capitalize;
-  }
-  
-  .upper {
-    display: none;
-  }
-  
-  header {
-      background-image: url(images/bg1-mobile.jpg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      padding: 1rem;
-      padding-bottom: 4rem;
-  }
-  .logo{
-    display: none;
-  }
-  .icon i {
-      font-size: 30px;
-      color: white;
-  }
-  
-  nav ul {
-    position: absolute;
-    height: 100vh;
-    width: 60%;
-    background-color: rgb(235, 230, 230);
-    top: 0;
-    right:-100%;
-    padding: 2rem 1rem;
-    display: none;
-    transition: .5s linear;
-  }
-  
-  .icon .fa-xmark {
-      display: none;
-  }
-  
-  nav li {
-    margin-bottom: 2rem; 
-  }
-  
-  nav a {
-    font-size: 23px;
-    color: rgb(58, 58, 58);
-  }
-   
-  .links {
-    text-transform: capitalize;
-  }
-  
-  .intro {
-      padding: 1.5rem 0;
-      text-transform: capitalize;
-      text-align: center;
-  }
-  
-  .intro h3 {
-    font-size: 20px;
-    color: rgb(230 27 27 / 94%);
-    font-weight: 400;
-  }
-  
-  .intro h2 {
-    font-size: 23px;
-    margin-top: 15px;
-  }
-  
-  .intro h1 {
-      color: rgb(236 12 12 / 86%);
-      font-size: 32px;
-      line-height: 1.1;
-      margin: 0.5rem 0;
-      text-transform: uppercase;
-      
-  }
-  
-  .intro p,
-  .intro a{
-      color: rgb(226, 207, 207);
-      font-size: 15px;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .intro p {
-   margin: 0.5rem 0;
-  }
+body {
+  font-family: lato, sans-serif;
+}
 
-  .intro a {
-     text-decoration: underline;
-     padding: 10px;
-  }
-  
-  .intro p.bg {
-      background-color: rgb(245 243 243 / 93%);
-      color: rgb(75, 74, 74);
-      border: 2px solid white;
-      padding: 10px;
-      margin: 1rem 0;
-  }
+li {
+  list-style: none;
+}
 
-  .show {
-      right: 0;
-      display: block;
-  }
-  
-  .how .fa-bars {
-      display: none;
-  }
-  
-  .how .fa-xmark {
-      display: block;
-  }
-  
-  .ntslogo {
-    padding: 1rem;
-    text-align: center;
-    border-bottom: 1px solid rgb(206, 202, 202);
-    margin: 1rem 0;
-  }
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+section h2 {
+  text-align: center;
+  margin: 1rem 0;
+  position: relative;
+}
+
+.upper {
+  display: none;
+}
+
+header {
+  background-image: url(images/bgtest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+.logo {
+  display: none;
+}
+
+.icon i {
+  font-size: 30px;
+  color: #272a32;
+}
+
+nav ul {
+  position: absolute;
+  height: 100vh;
+  width: 60%;
+  background-color: rgb(235, 230, 230);
+  top: 0;
+  right: -100%;
+  padding: 2rem 1rem;
+  display: none;
+  transition: 0.5s linear;
+  z-index: 99;
+}
+
+.icon .fa-xmark {
+  display: none;
+}
+
+nav li {
+  margin-bottom: 2rem;
+}
+
+nav a {
+  font-size: 23px;
+  color: rgb(58, 58, 58);
+  transition: 0.3s linear;
+}
+
+.intro a {
+  text-decoration: underline;
+  padding: 10px;
+}
+
+.links {
+  text-transform: capitalize;
+}
+
+footer p {
+  font-size: 14px;
+  margin-left: 1rem;
+  color: #272a32;
+}
+
+.intro p,
+.intro a {
+  color: #272a32;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #ec5242;
+}
+
+footer h3 {
+  border: 2px solid #ec5242;
+  text-align: center;
+  padding: 1px 1rem;
+  font-size: 15px;
+  margin-right: 1rem;
+  color: #272a32;
+}
+
+.intro {
+  padding: 1.5rem 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.intro h3 {
+  font-size: 20px;
+  color: #ec5242;
+  font-weight: 400;
+}
+
+.intro h2 {
+  font-size: 25px;
+  margin-top: 15px;
+  color: #272a32;
+}
+
+.intro h1 {
+  color: #ec5242;
+  font-size: 32px;
+  line-height: 1.1;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.intro p {
+  margin: 0.5rem 0;
+  color: #272a32;
+}
+
+.intro p.bg {
+  background-color: rgb(245 243 243 / 93%);
+  color: #272a32;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 1rem 0;
+}
+
+.show {
+  right: 0;
+  display: block;
+}
+
+section h2::after {
+  content: '';
+  width: 35px;
+  height: 2px;
+  border-radius: 12px;
+  position: absolute;
+  right: calc(50% - 8px);
+  bottom: -8px;
+  background-color: #ec5242;
+}
+
+.how .fa-bars {
+  display: none;
+}
+
+.how .fa-xmark {
+  display: block;
+}
+
+#larger {
+  display: none;
+}
+
+.ntslogo {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid rgb(206, 202, 202);
+  margin: 1rem 0;
+}
 
 .ntslogo h2 {
-   text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .ntsimage {
-   width: 100%;
-   padding: 0 1rem;
-   margin: 1rem 0;
-   border: 1px solid rgb(206, 202, 202);
+  width: 100%;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  border: 1px solid rgb(206, 202, 202);
 }
 
 .ntsimage img {
-   width: 100%;
+  width: 100%;
 }
 
 .pasts {
-  background-image: url(images/footer.jfif);
   background-size: cover;
   width: 100%;
+}
+
+.pasts p {
+  margin: 1rem 0;
 }
 
 .pastsummits {
   padding: 1rem;
   text-align: center;
-  width:75%;
+  width: 95%;
   margin: auto;
-  color:white;
+  color: white;
+}
+
+.pastsummits h2 {
+  color: #272a32;
 }
 
 .past1,
@@ -177,58 +227,58 @@
   margin: 10px 0;
   text-transform: capitalize;
   color: white;
+  padding: 0.5rem;
 }
 
 .past1 {
-  background-image: linear-gradient(rgba(202, 30, 30, 0.712),rgba(202, 30, 30, 0.712)), url(images/summit1.jfif);
+  background-image: linear-gradient(rgba(202, 30, 30, 0.712), rgba(202, 30, 30, 0.712)), url(images/summit1.jfif);
   background-size: 100%;
 }
 
 .past2 {
-  background-image: linear-gradient(rgba(202, 30, 30, 0.712),rgba(202, 30, 30, 0.712)), url(images/summit2.jpg);
-  
+  background-image: linear-gradient(rgba(202, 30, 30, 0.712), rgba(202, 30, 30, 0.712)), url(images/summit2.jpg);
 }
 
 .past1 h3,
 .past2 h3 {
   font-size: 25px;
+  margin: 0.5rem 0;
 }
 
 .past1 p,
 .past2 p {
-font-size: 18px;
-color: white;
-text-align: center;
+  font-size: 18px;
+  color: white;
+  text-align: center;
 }
 
 .desktop {
   display: none;
 }
 
+.sponsors {
+  background-image: url(images/footer.jfif);
+}
 
 .sponsors h2 {
-text-align: center;
+  text-align: center;
+  color: #d3d3d3;
 }
 
 .sponsors .contain {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.imgg { 
-width: 100px;
-margin: 10px;
+.imgg {
+  width: 100px;
+  margin: 10px;
 }
 
 .sponsors .contain img {
-width: 100%;
-}
-
-footer {
-  display:none;
-  background-image: url(images/footer.jfif);
+  width: 100%;
 }
 
 .con {
@@ -239,180 +289,184 @@ footer {
   color: white;
 }
 
-footer h3 {
-  border: 2px solid red;
-  text-align: center;
-  padding: 1px 1rem;
-  font-size: 15px;
-  margin-right: 1rem;
-}
-
-footer p {
-  font-size: 14px;
-  margin-left: 1rem;
-}
-
-
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .container {
-      width: 75%;
-      margin: 0 auto;
-    }
-    
-    header {
-        background-image: url(images/bg1-desktop.jpg);
-        padding: 0;
-    }
-    
-    .icon {
-      display: none;
-    }
-    
-    .upper {
-      background-color: rgb(66, 66, 66);
-      display: block;
-    }
-    
-    .socials {
-      width: 75%;
-      margin: 0 auto;
-      color: white;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 1rem 0;
-    }
-    
-    .socials li {
-        margin-left: 1rem;
-        font-size: 16px;
-    }
-    
-    .socials i {
-        color: white;
-        font-size: 16px;
-    }
-    
-    .logo {
-        display: block;
-    }
-    
-    .links {
-      background-color: white;
-      padding: 0;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 75%;
-        margin: 0 auto;
-    }
-  
-    nav ul {
-      position: unset;
-      display: flex;
-      height: auto;
-      width: auto;
-      background-color: transparent;
-      padding: 0;
-    }
-    
-    nav li {
-        margin-left: 10px;
-        margin-bottom: 0;
-    }
-    
-    nav li a {
-        font-size: 18px;
-    }
-    
-    nav a {
-        width: 100px;
-    }
-    
-    nav a img {
-        width: 100%;
-    }
-    
-    .intro {
-        width: 75%;
-        margin: 0 auto;
-        padding: 5rem 0;
-    }
-    
-    .intro h1 {
-        font-size: 45px;
-        text-transform: uppercase;
-    }
-    
-    .big {
-        width: 700px;
-        margin: 0 auto;
-    }
-
-    section,
-      .ntslogo {
-        width: 70%;
-        margin: 0 auto;
-      }
-
-      .ntsimage {
-        padding: 0 0.5rem;
-      }
-
-      .ntslogo p {
-        margin: 1.5rem 0;
-      }
-
-      .wrap {
-        display: flex;
-        justify-content: space-between;
-        margin: 2rem 0;
-      }
-
-      .past1,
-      .past2 {
-        width: 48%;
-        padding: 1rem;
-      }
-
-      .desktop {
-        display: block;
-      }
-      
-      .mobile {
-        display: none;
-      }
-
-      .sponsors {
-        display: block;
-      }
-      
-      .sponsors h2 {
-        margin: 2rem 0;
-      }
-
-      footer {
-        padding: 2rem 0;
-      }
-
-      .con {
-        width: 75%;
-        margin: auto;
-    }
-    
-      footer p {
-        margin-left: 0;
-      }
-    
-      .words .desktop {
-        margin: 0.4rem 0;
-      }
-    
-      .desktop, 
-      footer{
-        display: block;
-      }
+    width: 75%;
+    margin: 0 auto;
   }
+
+  header {
+    background-image: url(images/bgtest.jpg);
+    padding: 0;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .upper {
+    background-color: rgb(66, 66, 66);
+    display: block;
+  }
+
+  .socials {
+    width: 75%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  nav li {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .socials li {
+    margin-left: 1rem;
+    font-size: 16px;
+  }
+
+  .socials i {
+    color: white;
+    font-size: 16px;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .links {
+    background-color: white;
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    position: unset;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    padding: 0.5rem 0;
+  }
+
+  nav a {
+    width: 100px;
+  }
+
+  nav li a {
+    font-size: 18px;
+  }
+
+  nav a img {
+    width: 100%;
+  }
+
+  #larger {
+    border: 2px solid #ec5242;
+    padding: 0.5rem;
+    color: #ec5242;
+    display: block;
+  }
+
+  #larger a {
+    color: #ec5242;
+  }
+
+  .intro {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .intro h1 {
+    font-size: 45px;
+    text-transform: uppercase;
+  }
+
+  .big {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  section,
+  .ntslogo {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .ntsimage {
+    padding: 0 0.5rem;
+  }
+
+  footer p {
+    margin-left: 0;
+  }
+
+  .ntslogo p {
+    margin: 1.5rem 0;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+
+  .pastsummits {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .past1,
+  .past2 {
+    width: 48%;
+    padding: 1rem;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .sponsors {
+    display: block;
+    width: 100%;
+  }
+
+  .sponsors h2 {
+    margin: 2rem 0;
+  }
+
+  footer {
+    padding: 2rem 0;
+  }
+
+  .con {
+    width: 75%;
+    margin: auto;
+  }
+
+  .desktop,
+  footer {
+    display: block;
+  }
+
+  .words .desktop {
+    margin: 0.4rem 0;
+  }
+}

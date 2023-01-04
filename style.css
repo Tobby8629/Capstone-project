@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
 
 * {
- padding: 0;
- margin: 0;
- box-sizing: border-box;   
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  
+  font-family: lato, sans-serif;
 }
 
 section {
@@ -29,18 +27,20 @@ a {
 }
 
 header {
-    background-image: url(images/bg1-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 1rem;
-    padding-bottom: 4rem;
+  background-image: url(images/bgtest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem;
+  padding-bottom: 4rem;
 }
-.logo{
+
+.logo {
   display: none;
 }
+
 .icon i {
   font-size: 30px;
-  color: white;
+  color: #272a31;
 }
 
 nav ul {
@@ -49,10 +49,11 @@ nav ul {
   width: 60%;
   background-color: rgb(235, 230, 230);
   top: 0;
-  right:-100%;
+  right: -100%;
   padding: 2rem 1rem;
   display: none;
-  transition: .5s linear;
+  transition: 0.5s linear;
+  z-index: 99;
 }
 
 .icon .fa-xmark {
@@ -60,16 +61,58 @@ nav ul {
 }
 
 nav li {
-  margin-bottom: 2rem; 
+  margin-bottom: 2rem;
+  transition: 0.4s linear;
 }
 
 nav a {
   font-size: 23px;
   color: rgb(58, 58, 58);
+  transition: 0.3s linear;
 }
- 
+
+.btn a {
+  display: none;
+}
+
+nav a:hover {
+  color: #ec5242;
+}
+
 .links {
   text-transform: capitalize;
+}
+
+footer h3 {
+  border: 2px solid #ec5242;
+  text-align: center;
+  padding: 1px 1rem;
+  font-size: 15px;
+  margin-right: 1rem;
+  color: #272a31;
+}
+
+footer p {
+  font-size: 14px;
+  margin-left: 1rem;
+  color: #272a31;
+}
+
+section h2 {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 35px;
+  height: 2px;
+  border-radius: 12px;
+  position: absolute;
+  right: calc(50% - 8px);
+  bottom: -8px;
+  background-color: #ec5242;
 }
 
 .intro {
@@ -79,13 +122,14 @@ nav a {
 
 .intro h3 {
   font-size: 23px;
-  color: rgb(230 27 27 / 94%);
+  color: #ec5242;
   font-weight: 400;
 }
 
 .intro h2 {
-  font-size: 23px;
+  font-size: 28px;
   margin-top: 15px;
+  font-weight: 800;
 }
 
 .intro h1 {
@@ -94,12 +138,15 @@ nav a {
   line-height: 1.1;
   margin: 0.5rem 0;
   text-transform: uppercase;
-    
+}
+
+.pros p {
+  width: 65%;
 }
 
 .intro p:last-child,
 .intro h2 {
-  color: rgb(226, 207, 207);
+  color: #272a31;
 }
 
 .bg {
@@ -122,10 +169,14 @@ nav a {
   display: block;
 }
 
+#larger {
+  display: none;
+}
+
 .program {
   padding: 2rem 1rem;
   background-image: url(images/program-mobile.jpg);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -145,7 +196,12 @@ nav a {
   align-items: center;
   margin: 5px 0;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.288)
+  background-color: rgba(255, 255, 255, 0.288);
+  transition: 0.3s linear;
+}
+
+.pros:hover {
+  box-shadow: 2px 0 10px 0 gray;
 }
 
 .pros .img {
@@ -154,20 +210,20 @@ nav a {
   width: 30%;
 }
 
+.more button i {
+  color: #ec5242;
+}
+
 .pros .img i {
   margin-right: 5px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .pros .img h4 {
   text-transform: capitalize;
-  font-size: 15px;
-  color: rgb(230 27 27 / 94%);
-}
-
-.pros p {
-  width: 65%;
-  font-size: 13px;
+  font-size: 16px;
+  color: #ec5242;
+  font-weight: 800;
 }
 
 .program .btn {
@@ -176,33 +232,20 @@ nav a {
 }
 
 .program button {
-  background-color:rgb(230 27 27 / 94%);
-  padding: 0.5rem 1rem;
+  background-color: #ec5242;
+  padding: 1rem;
   width: 75%;
-  border: none; 
+  border: none;
   color: white;
   font-size: 16px;
   text-align: center;
-  font-family: poppins;
-}
-
-.btn a{
-  display: none;
+  font-family: lato, sans-serif;
 }
 
 
-/****************featured speaker section*****************************/
 
-.speaker {
-  background-image: url(images/speaker.jpg);
-  background-size: cover;
-  color: white;
-}
 
-section h2{
-  text-align: center;
-  margin: 1rem 0px;
-}
+/****************  featured speaker section  *****************************/
 
 .wrapper {
   display: grid;
@@ -213,10 +256,20 @@ section h2{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s linear;
 }
 
 .each .img {
   width: 32%;
+  position: relative;
+  padding: 5px;
+}
+
+.each .img img {
+  z-index: 99;
+  position: inherit;
+  height: 80%;
+  width: 100%;
 }
 
 .each .texts {
@@ -228,18 +281,23 @@ section h2{
 }
 
 .each .texts h4 {
-  color: rgb(230 27 27 / 94%);
+  color: #ec5242;
   text-transform: capitalize;
-}
-
-.each .texts p,
-.each .texts h4 {
-  font-size: 13px;
   margin: 5px 0;
 }
 
-.img img {
-  width: 100%;
+.each .texts p {
+  margin: 5px 0;
+  color: #272a31;
+}
+
+.backdrop {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #ec5242;
+  top: -10px;
+  left: -5px;
 }
 
 .more button {
@@ -248,19 +306,24 @@ section h2{
   border: 1px solid rgb(78, 78, 78);
   padding: 0.5rem;
   font-size: 20px;
-  font-family: poppins;
+  font-family: lato, sans-serif;
   display: flex;
-  color: white;
+  color: #272a31;
   align-items: center;
   justify-content: center;
 }
 
 .more span {
   margin-right: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
 }
 
 .sponsors {
   display: none;
+  background-image: url(images/speaker.jpg);
+  background-size: cover;
+  color: white;
 }
 
 .sponsors h2 {
@@ -274,7 +337,7 @@ section h2{
   flex-wrap: wrap;
 }
 
-.imgg { 
+.imgg {
   width: 100px;
   margin: 10px;
 }
@@ -288,8 +351,7 @@ section h2{
 }
 
 footer {
-  display:none;
-  background-image: url(images/footer.jfif);
+  display: none;
 }
 
 .con {
@@ -300,41 +362,24 @@ footer {
   color: white;
 }
 
-footer h3 {
-  border: 2px solid red;
-  text-align: center;
-  padding: 1px 1rem;
-  font-size: 15px;
-  margin-right: 1rem;
-}
+/****************  sponsor section  *****************************/
 
-footer p {
-  font-size: 14px;
-  margin-left: 1rem;
-}
-
-
-/****************sponsor section*****************************/
-
-
-
-@media (min-width:768px) {
-
+@media (min-width: 768px) {
   header {
-    background-image: url(images/bg1-desktop.jpg);
+    background-image: url(images/bgtest.jpg);
     background-size: cover;
     padding: 0;
   }
-  
+
   .icon {
     display: none;
   }
-  
+
   .upper {
     background-color: rgb(66, 66, 66);
     display: block;
   }
-  
+
   .socials {
     width: 75%;
     margin: 0 auto;
@@ -344,26 +389,31 @@ footer p {
     align-items: center;
     padding: 1rem 0;
   }
-  
+
+  nav li {
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
   .socials li {
     margin-left: 1rem;
     font-size: 16px;
   }
-  
+
   .socials i {
     color: white;
     font-size: 16px;
   }
-  
+
   .logo {
     display: block;
   }
-  
+
   .links {
     background-color: white;
     padding: 0;
   }
-  
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -371,164 +421,128 @@ footer p {
     width: 75%;
     margin: 0 auto;
   }
-  
+
   nav ul {
     position: unset;
     display: flex;
     height: auto;
     width: auto;
     background-color: transparent;
-    padding: 0;
+    padding: 0.5rem 0;
+    align-items: center;
   }
-  
-  nav li {
-    margin-left: 10px;
-    margin-bottom: 0;
-  }
-  
-  nav li a {
-    font-size: 18px;
-  }
-  
+
   nav a {
     width: 100px;
   }
-  
+
+  nav li a {
+    font-size: 18px;
+  }
+
   nav a img {
     width: 100%;
   }
-  
+
+  .btn a {
+    display: block;
+    text-decoration: underline;
+  }
+
+  #larger {
+    border: 2px solid #ec5242;
+    padding: 0.5rem;
+    display: block;
+  }
+
+  #larger a {
+    color: #ec5242;
+  }
+
   .intro {
     width: 75%;
     margin: 0 auto;
     padding: 5rem 0;
   }
-  
+
   .intro h1 {
     font-size: 45px;
     text-transform: uppercase;
   }
-  
+
   .intro .bg {
     width: 600px;
   }
 
-  .program {
-    background-image: url(images/program-desktop.jpg);
-    background-size: cover;
-    padding: 4rem 0;
-  }
-  
-  .container {
-    width: 75%;
-    margin: 2rem auto;
-    grid-template-columns: repeat(auto-fill, 200px);
-  }
-  
-  .pros {
-    flex-direction: column;
-    text-align: center;
-    margin: 5px;
-    padding: 15px 5px;
-  }
-  
-  .pros .img {
-    flex-direction: column;
-  }
-  
   .pros .img i {
     font-size: 25px;
     margin: 5px 0;
   }
-  
-  .pros h4 {
-    margin: 5px 0;  
-  }
-  
-  .pros .img,
-  .pros p {
-    width: 100%;
-  }
-  
+
   .btn button {
     display: none;
   }
-  
-  .btn a {
-    display: block;
-    text-decoration: underline;
-  }
-  
-  /****************program section*****************************/
+
+  /****************  program section  *****************************/
 
   .program {
     background-image: url(images/program-desktop.jpg);
     background-size: cover;
     padding: 4rem 0;
   }
-  
+
   .container {
     width: 75%;
     margin: 2rem auto;
     grid-template-columns: repeat(auto-fill, 200px);
   }
-  
+
   .pros {
     flex-direction: column;
     text-align: center;
     margin: 5px;
     padding: 15px 5px;
   }
-  
+
   .pros .img {
     flex-direction: column;
   }
-  
-  .pros .img i {
-    font-size: 25px;
+
+  .pros h4 {
     margin: 5px 0;
   }
-  
-  .pros h4 {
-    margin: 5px 0;  
+
+  footer p {
+    margin-left: 0;
   }
-  
+
   .pros .img,
   .pros p {
     width: 100%;
   }
-  
-  .btn button {
-    display: none;
-  }
-  
-  .btn a {
-    display: block;
-    text-decoration: underline;
-  }
 
-  /**************featuresspeaker section*********************/
+  /**************  featuresspeaker section  *********************/
 
   .contain {
     width: 75%;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
-  
+
   .contain h2 {
     margin: 1rem 0;
   }
-  
+
   .wrapper {
     grid-template-columns: repeat(auto-fill, 34vw);
     justify-content: center;
-    transition: .3s linear;
+    transition: 0.3s linear;
   }
-  
+
   .each {
     align-items: center;
   }
-  
-  .imgg { 
+
+  .imgg {
     width: 120px;
     margin: 15px;
   }
@@ -537,37 +551,31 @@ footer p {
     display: none;
   }
 
-  /**************sponsor section*********************/
+  /**************  sponsor section  *********************/
 
   .sponsors {
     display: block;
   }
-  
+
   .sponsors h2 {
     margin: 2rem 0;
-  } 
+  }
 
   .con {
     width: 75%;
-    margin :auto;
+    margin: auto;
   }
 
   footer {
     padding: 2rem 0;
   }
 
-  footer p {
-    margin-left: 0;
+  .desktop,
+  footer {
+    display: block;
   }
 
   .words .desktop {
     margin: 0.4rem 0;
   }
-
-  .desktop, 
-  footer{
-    display: block;
-  }
-
-
 }
