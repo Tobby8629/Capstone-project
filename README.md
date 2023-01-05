@@ -210,7 +210,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/tobby8629)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/samuel-popoola-b0196922a/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/samuel popoola)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -253,7 +253,8 @@ If you like this project, please kindly follow to see more beautiful projects
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank the microverse organization and my friends who have been supportive throughout the course of this project
+- I would like to thank the microverse organization and my friends who have been supportive throughout the course of this project
+- I appreciate cindy shin the author of the CC GLOBAL SUMMIT 2015 for the access giving to me to work with the template.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
