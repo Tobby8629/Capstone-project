@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [NTS 2022] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**my first capstone project** is about national tech summit
+**my first capstone project** is about national tech summit, here is a link for full description <a href="https://www.loom.com/share/e9f60868b7cf47cba3983c9c9ad6d849"> click here </a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -112,7 +112,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://tobby8629.github.io/Capstone-project/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,7 +210,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/tobby8629)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/samuel-popoola-tobby/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -253,7 +253,8 @@ If you like this project, please kindly follow to see more beautiful projects
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank the microverse organization and my friends who have been supportive throughout the course of this project
+- I would like to thank the microverse organization and my friends who have been supportive throughout the course of this project
+- I appreciate <a href="https://www.behance.net/adagio07">cindy shin</a>cindy shin the author of the CC GLOBAL SUMMIT 2015 for the access giving to me to work with the template.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
