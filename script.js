@@ -3,7 +3,10 @@ const tray = document.querySelector('#tray');
 
 bars.addEventListener('click', () => {
   tray.classList.toggle('show');
-  bars.classList.toggle('how');
+});
+
+tray.addEventListener('click', () => {
+  tray.classList.remove('show');
 });
 
 const speakers = [

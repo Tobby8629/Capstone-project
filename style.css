@@ -41,34 +41,38 @@ header {
 .icon i {
   font-size: 30px;
   color: #272a31;
+  z-index: 99;
 }
 
-nav ul {
+header nav ul {
   position: absolute;
   height: 100vh;
-  width: 60%;
-  background-color: rgb(235, 230, 230);
+  width: 100%;
+  background-color: rgba(235, 230, 230, 0.534);
   top: 0;
   right: -100%;
   padding: 2rem 1rem;
   display: none;
   transition: 0.5s linear;
   z-index: 99;
+  backdrop-filter: blur(6px);
 }
 
-.icon .fa-xmark {
-  display: none;
-}
-
-nav li {
+header nav li {
   margin-bottom: 2rem;
   transition: 0.4s linear;
 }
 
-nav a {
+header nav a {
   font-size: 23px;
   color: rgb(58, 58, 58);
   transition: 0.3s linear;
+}
+
+#tray .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .btn a {
@@ -138,6 +142,7 @@ section h2::after {
   line-height: 1.1;
   margin: 0.5rem 0;
   text-transform: uppercase;
+  font-weight: 900;
 }
 
 .pros p {
@@ -158,14 +163,6 @@ section h2::after {
 
 .show {
   right: 0;
-  display: block;
-}
-
-.how .fa-bars {
-  display: none;
-}
-
-.how .fa-xmark {
   display: block;
 }
 
@@ -192,7 +189,7 @@ section h2::after {
 
 .pros {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   align-items: center;
   margin: 5px 0;
   padding: 5px;
@@ -215,7 +212,7 @@ section h2::after {
 }
 
 .pros .img i {
-  margin-right: 5px;
+  margin-right: 10px;
   font-size: 25px;
 }
 
@@ -321,9 +318,8 @@ section h2::after {
 
 .sponsors {
   display: none;
-  background-image: url(images/speaker.jpg);
-  background-size: cover;
-  color: white;
+  background-color: #3f3d3c;
+  color: #d3d3d3;
 }
 
 .sponsors h2 {
@@ -414,7 +410,7 @@ footer {
     padding: 0;
   }
 
-  nav {
+  header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -422,7 +418,7 @@ footer {
     margin: 0 auto;
   }
 
-  nav ul {
+  header nav ul {
     position: unset;
     display: flex;
     height: auto;
@@ -432,15 +428,15 @@ footer {
     align-items: center;
   }
 
-  nav a {
+  header nav a {
     width: 100px;
   }
 
-  nav li a {
+  header nav li a {
     font-size: 18px;
   }
 
-  nav a img {
+  header nav a img {
     width: 100%;
   }
 
