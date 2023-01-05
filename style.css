@@ -143,12 +143,14 @@ section h2::after {
 }
 
 .intro h1 {
-  color: #ec5242;
-  font-size: 32px;
+  font-size: 2.9rem;
   line-height: 1.1;
   margin: 0.5rem 0;
   text-transform: uppercase;
   font-weight: 900;
+  background: linear-gradient(to right, #f53f3f, #ec534271, #ec6a42, #f74b37), url(images/summit2.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .pros p {
@@ -190,17 +192,18 @@ section h2::after {
 }
 
 .container {
-  display: grid;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .pros {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin: 5px 0;
+  margin: 10px 0;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.116);
   transition: 0.3s linear;
 }
 
@@ -297,11 +300,11 @@ section h2::after {
 
 .backdrop {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: #ec5242;
+  width: 50%;
+  height: 50%;
   top: -10px;
   left: -5px;
+  z-index: -99;
 }
 
 .more button {
@@ -477,6 +480,7 @@ footer {
   .intro h1 {
     font-size: 45px;
     text-transform: uppercase;
+    width: fit-content;
   }
 
   .intro .bg {
@@ -501,9 +505,10 @@ footer {
   }
 
   .container {
-    width: 75%;
     margin: 2rem auto;
-    grid-template-columns: repeat(auto-fill, 200px);
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .pros {
@@ -511,6 +516,7 @@ footer {
     text-align: center;
     margin: 5px;
     padding: 15px 5px;
+    width: 180px;
   }
 
   .pros .img {

@@ -77,7 +77,8 @@ function wrap(main, array) {
         <div class="img">
             <img src=${array.image} alt=${array.alt} srcset="">
             <div class="backdrop">
-        </div>
+              <img src="images/chess2.webp" alt="" srcset="">
+            </div>
         </div>
         <div class="texts">
             <h3>${array.speaker}</h3>
@@ -103,15 +104,6 @@ window.addEventListener('load', () => {
     test.map((test) => (
       wrap(wrapper, test)
     ));
-    more.addEventListener('click', () => {
-      wrapper.innerHTML = '';
-      more.style.display = 'none';
-      sponsors.style.display = 'block';
-      footer.style.display = 'block';
-      speakers.map((speaker) => (
-        wrap(wrapper, speaker)
-      ));
-    });
   }
 });
 
@@ -133,4 +125,14 @@ window.addEventListener('resize', () => {
     sponsors.style.display = 'block';
     footer.style.display = 'block';
   }
+});
+
+more.addEventListener('click', () => {
+  wrapper.innerHTML = '';
+  more.style.display = 'none';
+  sponsors.style.display = 'block';
+  footer.style.display = 'block';
+  speakers.map((speaker) => (
+    wrap(wrapper, speaker)
+  ));
 });
