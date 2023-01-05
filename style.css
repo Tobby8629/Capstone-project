@@ -27,9 +27,10 @@ a {
 }
 
 header {
-  background-image: url(images/bgtest.jpg);
+  background-image: url(images/bg1.JPG);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 1rem;
   padding-bottom: 4rem;
 }
@@ -137,7 +138,7 @@ section h2::after {
 }
 
 .intro h1 {
-  color: rgb(236 12 12 / 86%);
+  color: #ec5242;
   font-size: 32px;
   line-height: 1.1;
   margin: 0.5rem 0;
@@ -172,9 +173,10 @@ section h2::after {
 
 .program {
   padding: 2rem 1rem;
-  background-image: url(images/program-mobile.jpg);
+  background-image: url(images/bg3.JPG);
   background-repeat: no-repeat;
   background-size: cover;
+  color: #d3d3d3;
 }
 
 .program h2 {
@@ -221,6 +223,11 @@ section h2::after {
   font-size: 16px;
   color: #ec5242;
   font-weight: 800;
+}
+
+.program a {
+  color: #d3d3d3;
+  text-transform: uppercase;
 }
 
 .program .btn {
@@ -348,6 +355,7 @@ section h2::after {
 
 footer {
   display: none;
+  background-color: whitesmoke;
 }
 
 .con {
@@ -362,8 +370,9 @@ footer {
 
 @media (min-width: 768px) {
   header {
-    background-image: url(images/bgtest.jpg);
-    background-size: cover;
+    background-image: url(images/bg1.JPG);
+    background-size: 100%;
+    background-position: center;
     padding: 0;
   }
 
@@ -432,6 +441,10 @@ footer {
     width: 100px;
   }
 
+  header nav li {
+    margin: 0 5px;
+  }
+
   header nav li a {
     font-size: 18px;
   }
@@ -482,7 +495,7 @@ footer {
   /****************  program section  *****************************/
 
   .program {
-    background-image: url(images/program-desktop.jpg);
+    background-image: url(images/bg3.JPG);
     background-size: cover;
     padding: 4rem 0;
   }

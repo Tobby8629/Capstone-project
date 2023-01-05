@@ -29,9 +29,8 @@ section h2 {
 }
 
 header {
-  background-image: url(images/bgtest.jpg);
+  background-image: linear-gradient(rgba(235, 232, 232, 0.479),rgba(235, 232, 232, 0.479)),url(images/bg2.JPG);
   background-repeat: no-repeat;
-  background-size: cover;
   padding: 1rem;
   padding-bottom: 4rem;
 }
@@ -94,6 +93,11 @@ footer p {
 .intro a {
   color: #272a32;
   font-size: 15px;
+}
+
+.intro a {
+  font-weight: 800;
+  font-size: 16px;
 }
 
 header nav a:hover {
@@ -252,7 +256,7 @@ section h2::after {
 }
 
 .sponsors {
-  background-color: #272a31;
+  background-color: #302f2f;
 }
 
 .sponsors h2 {
@@ -291,7 +295,8 @@ section h2::after {
   }
 
   header {
-    background-image: url(images/bgtest.jpg);
+    background-position: center;
+    background-size: 100%;
     padding: 0;
   }
 
@@ -395,10 +400,6 @@ section h2::after {
     text-transform: uppercase;
   }
 
-  .big {
-    width: 700px;
-    margin: 0 auto;
-  }
 
   section,
   .ntslogo {
