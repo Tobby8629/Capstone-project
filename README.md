@@ -210,7 +210,7 @@ Example:
 
 - GitHub: [@githubhandle](https://github.com/tobby8629)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](www.linkedin.com/in/samuel-popoola-tobby)
+- LinkedIn: [@LinkedIn](www.linkedin.com/in/samuel-popoola-tobby)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
