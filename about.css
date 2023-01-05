@@ -332,14 +332,13 @@ section h2::after {
   }
 
   .links {
-    padding: 0;
     background-color: white;
     position: fixed;
     width: 100%;
     right: 0;
     top: 0;
-    padding: .5rem 1rem;
-    z-index: 100
+    padding: 0;
+    z-index: 100;
   }
 
   header nav {
@@ -348,7 +347,6 @@ section h2::after {
     align-items: center;
     width: 75%;
     margin: 0 auto;
-    
   }
 
   header nav ul {
