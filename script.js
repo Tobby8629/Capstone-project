@@ -1,3 +1,4 @@
+
 const bars = document.querySelector('.icon');
 const tray = document.querySelector('#tray');
 
@@ -136,3 +137,4 @@ more.addEventListener('click', () => {
     wrap(wrapper, speaker)
   ));
 });
+
