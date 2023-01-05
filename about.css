@@ -29,7 +29,7 @@ section h2 {
 }
 
 header {
-  background-image: linear-gradient(rgba(235, 232, 232, 0.479),rgba(235, 232, 232, 0.479)),url(images/bg2.JPG);
+  background-image: linear-gradient(rgba(235, 232, 232, 0.479), rgba(235, 232, 232, 0.479)), url(images/bg2.JPG);
   background-repeat: no-repeat;
   padding: 1rem;
   padding-bottom: 4rem;
@@ -74,11 +74,6 @@ header nav a {
   transition: 0.3s linear;
 }
 
-.intro a {
-  text-decoration: underline;
-  padding: 10px;
-}
-
 .links {
   text-transform: capitalize;
 }
@@ -89,15 +84,18 @@ footer p {
   color: #272a32;
 }
 
-.intro p,
-.intro a {
-  color: #272a32;
+.intro p {
   font-size: 15px;
+  margin: 0.5rem 0;
+  color: #272a32;
 }
 
 .intro a {
   font-weight: 800;
   font-size: 16px;
+  color: #272a32;
+  text-decoration: underline;
+  padding: 10px;
 }
 
 header nav a:hover {
@@ -137,11 +135,6 @@ footer h3 {
   line-height: 1.1;
   margin: 0.5rem 0;
   text-transform: uppercase;
-}
-
-.intro p {
-  margin: 0.5rem 0;
-  color: #272a32;
 }
 
 .intro p.bg {
@@ -399,7 +392,6 @@ section h2::after {
     font-size: 45px;
     text-transform: uppercase;
   }
-
 
   section,
   .ntslogo {

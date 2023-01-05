@@ -124,7 +124,6 @@ window.addEventListener('resize', () => {
     sponsors.style.display = 'none';
     footer.style.display = 'none';
     more.style.display = 'block';
-    
   } else {
     wrapper.innerHTML = '';
     speakers.map((speaker) => (
@@ -135,4 +134,3 @@ window.addEventListener('resize', () => {
     footer.style.display = 'block';
   }
 });
-

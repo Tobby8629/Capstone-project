@@ -80,6 +80,11 @@ header nav a {
   display: none;
 }
 
+.program a {
+  color: #d3d3d3;
+  text-transform: uppercase;
+}
+
 nav a:hover {
   color: #ec5242;
 }
@@ -223,11 +228,6 @@ section h2::after {
   font-size: 16px;
   color: #ec5242;
   font-weight: 800;
-}
-
-.program a {
-  color: #d3d3d3;
-  text-transform: uppercase;
 }
 
 .program .btn {
@@ -400,6 +400,10 @@ footer {
     margin-bottom: 0;
   }
 
+  header nav li {
+    margin: 0 5px;
+  }
+
   .socials li {
     margin-left: 1rem;
     font-size: 16px;
@@ -439,10 +443,6 @@ footer {
 
   header nav a {
     width: 100px;
-  }
-
-  header nav li {
-    margin: 0 5px;
   }
 
   header nav li a {
