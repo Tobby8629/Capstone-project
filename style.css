@@ -423,12 +423,7 @@ footer {
 
   .links {
     background-color: white;
-    position: fixed;
-    width: 100%;
-    right: 0;
-    top: 0;
     padding: 0;
-    z-index: 100;
   }
 
   header nav {
@@ -513,7 +508,7 @@ footer {
     margin: 2rem auto;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+    width: 90%;
   }
 
   .pros {
@@ -539,6 +534,10 @@ footer {
   .pros .img,
   .pros p {
     width: 100%;
+  }
+
+  .pros p {
+    font-size: 14px;
   }
 
   /**************  featuresspeaker section  *********************/
