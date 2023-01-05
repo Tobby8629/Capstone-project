@@ -116,15 +116,7 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth >= 768) {
-    wrapper.innerHTML = '';
-    speakers.map((speaker) => (
-      wrap(wrapper, speaker)
-    ));
-    more.style.display = 'none';
-    sponsors.style.display = 'block';
-    footer.style.display = 'block';
-  } else {
+  if (window.innerWidth < 768) {
     wrapper.innerHTML = '';
     test.map((test) => (
       wrap(wrapper, test)
@@ -132,5 +124,15 @@ window.addEventListener('resize', () => {
     sponsors.style.display = 'none';
     footer.style.display = 'none';
     more.style.display = 'block';
+    
+  } else {
+    wrapper.innerHTML = '';
+    speakers.map((speaker) => (
+      wrap(wrapper, speaker)
+    ));
+    more.style.display = 'none';
+    sponsors.style.display = 'block';
+    footer.style.display = 'block';
   }
 });
+

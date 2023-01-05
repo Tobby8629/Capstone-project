@@ -64,7 +64,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**my first capstone project** is about national tech summit
+**my first capstone project** is about national tech summit, here is a link for full description <a href="https://www.loom.com/share/e9f60868b7cf47cba3983c9c9ad6d849"> click here </a>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -112,7 +112,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://tobby8629.github.io/Capstone-project/)
+- [Live Demo Link](https://tobby8629.github.io/Capstone-project/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
